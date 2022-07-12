@@ -37,18 +37,22 @@ h1{
     flex-wrap: wrap;
 }
 
-input[type="Name" i] {
-   height: 30px;
+
+input[type="text" i] {
+    padding: 1px 2px;
+    height: 30px;
    width: 270px;
    margin-right: 3%;
    margin-top: 3%;
 }
-input[type="Name2" i] {
+input[type="number" i] {
     height: 30px;
     width: 575px;
     margin-right: 3%;
     margin-top: 3%;
- }
+}
+
+
 .paises{
     height: 35px;
     width: 270px;

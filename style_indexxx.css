@@ -267,30 +267,31 @@ nav {
 						color: rgb(75, 74, 74);
 					}
 					
-					nav2 {
+					nav.base{
 						text-align: center;
+						float: none;
 					}
-						nav2 ul {
+						nav ul.base {
 							margin: 0 0 0 60px;
 							padding: 0;
 							list-style: none;
 							padding-right: 0px;
 						}
 						
-							nav2 ul li {
+							nav ul li.base {
 								display: -webkit-inline-box;
     							line-height: 30px;
     							padding: 15px 10px 0px 0px;
 								align-items: center;
 							}
 								
-								nav2 ul li a {
+								nav ul li a.base {
 									display: block;
 									
 									text-decoration: none;
 								}
 								
-									nav2 ul li a:hover {
+									nav ul li a:hover {
 										background: #0b76a6;
 										
 									}

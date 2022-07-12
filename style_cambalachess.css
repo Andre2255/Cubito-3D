@@ -76,7 +76,10 @@ h1{
 .imagen{
     float: left;
     margin: auto;
+    height: 10px ;
+    width: 30px;
 }
+
 .arInfo{
     padding-left: 10px;
     
