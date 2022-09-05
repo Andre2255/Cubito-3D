@@ -1,0 +1,10 @@
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+#bg{
+  width: 1300px;
+  height: 700px;
+}
