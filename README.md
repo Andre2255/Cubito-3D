@@ -1,1 +1,1 @@
-# first proyect working with threejs library
+# Working with threejs library
