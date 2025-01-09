@@ -1,9 +1,6 @@
 import './style.css'
 import * as THREE from 'https://cdn.skypack.dev/three@0.136';
 
-import { FirstPersonControls } from 'https://cdn.skypack.dev/three@0.136/examples/jsm/controls/FirstPersonControls.js';
-
-
 const KEYS = {
   'a': 65,
   's': 83,
@@ -311,10 +308,10 @@ class FirstPersonCameraDemo {
     this.scene_.add(box);
 
     const box2 = new THREE.Mesh(
-      new THREE.Vector3(5, 5, 5),
+      new THREE.BoxGeometry(5, 5, 5),
       this.loadMaterial_('box'));
-    box2.position.set(4, 20, 2);
-    //this.scene_.add(box2);
+    box2.position.set(-15, 2, 8);
+    this.scene_.add(box2);
 
     const sphere = new THREE.Mesh(
       new THREE.SphereGeometry(2, 100, 100),
@@ -456,15 +453,7 @@ class FirstPersonCameraDemo {
     this.fpsCamera_.update(timeElapsedS);
   }
 }
-
-
-let _APP = null;
-let APP_ = null;
 window.addEventListener('DOMContentLoaded', async () => {
   _APP = new FirstPersonCameraDemo();
-  Ammo().then((lib) => {
-    Ammo = lib;
-    APP_ = new BasicWorldDemo();
-    APP_.initialize();
-  });
+
 });
