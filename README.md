@@ -1,2 +1,3 @@
 # Working with threejs library in javascript DEMO
-https://cubitothreejs-javascript.netlify.app/
+[Cubito-3D View](https://cubitothreejs-javascript.netlify.app/)
+
