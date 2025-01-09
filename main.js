@@ -272,12 +272,12 @@ class FirstPersonCameraDemo {
   initializeScene_() {
     const loader = new THREE.CubeTextureLoader();
     const texture = loader.load([
-      './textures/tears_ft.jpg',
-      './textures/tears_bk.jpg',
-      './textures/tears_up.jpg',
-      './textures/tears_dn.jpg',
-      './textures/tears_rt.jpg',
-      './textures/tears_lf.jpg',
+      '/textures/tears_ft.jpg',
+      '/textures/tears_bk.jpg',
+      '/textures/tears_up.jpg',
+      '/textures/tears_dn.jpg',
+      '/textures/tears_rt.jpg',
+      '/textures/tears_lf.jpg',
     ]);
 
     texture.encoding = THREE.sRGBEncoding;
@@ -285,7 +285,7 @@ class FirstPersonCameraDemo {
 
     const mapLoader = new THREE.TextureLoader();
     const maxAnisotropy = this.threejs_.capabilities.getMaxAnisotropy();
-    const checkerboard = mapLoader.load('./textures/checkerboard2.jpg');
+    const checkerboard = mapLoader.load('/textures/checkerboard2.jpg');
     checkerboard.anisotropy = maxAnisotropy;
     checkerboard.wrapS = THREE.RepeatWrapping;
     checkerboard.wrapT = THREE.RepeatWrapping;
@@ -397,11 +397,11 @@ class FirstPersonCameraDemo {
 
     let albedo;
     if (name == 'box') {
-      albedo = mapLoader.load('./textures/checkerboard.png');
+      albedo = mapLoader.load('/textures/checkerboard.png');
       albedo.repeat.set(1, 1);
     }
     else {
-      albedo = mapLoader.load('./textures/arbusto.webp');
+      albedo = mapLoader.load('/textures/arbusto.webp');
       albedo.repeat.set(1.5, 1.5);
     }
     albedo.anisotropy = maxAnisotropy;
